@@ -16,17 +16,95 @@
 <body>
   <div class="wrapper">
     <header>
-      <div class="container"></div>
+      <div class="container">
+        <div class="main-header">
+          <a class="main-header__logo" href="index.html">
+            <svg width="205" height="62">
+              <use href="img/sprite.svg#logo-white"></use>
+            </svg>
+          </a>
+          <nav class="main-header__nav header-nav">
+            <u class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#tours">
+                  Туры
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#training">
+                  Обучение
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#about">
+                  О нас
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#reviews">
+                  Отзывы
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#pictures">
+                  Фотографии
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#contacts">
+                  Контакты
+                </a>
+              </li>
+            </u>
+          </nav>
+          <a class="main-header__phone" href="tel:+7(800)555-55-55">
+            8-800-725-32-32
+          </a>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="intro">
-        <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+      <section class="hero">
+        <div class="container swiper" data-swiper="hero">
+          <div class="swipper-wrapper hero__wrapper">
+            <div class="swipper-slide hero__slide">
+              <h1 class="hero__title">
+                Захватывающие вершины Кавказа
+              </h1>
+              <p class="hero__description">
+                В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
+                Чегет.
+              </p>
+              <a class="hero__button" href="#">
+                Смотреть тур
+              </a>
+            </div>
+            <div class="swipper-slide hero__slide">
+              <h1 class="hero__title">
+                Захватывающие вершины Кавказа
+              </h1>
+              <p class="hero__description">
+                В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
+                Чегет.
+              </p>
+              <a class="hero__button" href="#">
+                Смотреть тур
+              </a>
+            </div>
+            <div class="swipper-slide hero__slide">
+              <h1 class="hero__title">
+                Захватывающие вершины Кавказа
+              </h1>
+              <p class="hero__description">
+                В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
+                Чегет.
+              </p>
+              <a class="hero__button" href="#">
+                Смотреть тур
+              </a>
+            </div>
+            <div class="swiper-pagination" data-swiper="pagination"></div>
+          </div>
         </div>
       </section>
     </main>

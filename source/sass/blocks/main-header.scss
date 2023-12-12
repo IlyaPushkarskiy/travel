@@ -1,0 +1,13 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-neon-blue;
+  max-width: $vp-1200;
+  box-sizing: border-box;
+  padding: 32px 20px;
+}
+
+.main-header__phone {
+  color: $color-default-white;
+}

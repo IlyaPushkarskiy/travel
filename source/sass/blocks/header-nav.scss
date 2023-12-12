@@ -1,0 +1,12 @@
+.header-nav__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header-nav__link {
+  list-style: none;
+  color: $color-default-white;
+}
