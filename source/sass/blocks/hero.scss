@@ -1,10 +1,55 @@
 .hero__slide {
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding: 200px 120px 80px;
+  color: $color-default-white;
+}
+
+.hero__title {
+  max-width: 934px;
 }
 
 .hero__description {
+  font-size: 17px;
+  line-height: 24px;
+  max-width: 457px;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 35px;
+}
+
+.hero__button {
+  margin-bottom: 134px;
+}
+
+.hero__box img {
+  position: absolute;
+  z-index: -2;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.hero__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero__info-box {
+  position: relative;
+}
+
+.hero__item {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 14px 20px 14px 40px;
+  border: 1px solid $color-default-white;
+}
+
+.hero__icon {
+  position: absolute;
+  left: 20px;
+  top: 7px;
 }

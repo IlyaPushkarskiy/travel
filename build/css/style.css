@@ -363,7 +363,7 @@ template {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #ffffff;
 }
 
 .swiper {
@@ -775,12 +775,11 @@ template {
 }
 
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
   display: inline-block;
   border-radius: 50%;
-  background: var(--swiper-pagination-bullet-inactive-color, #000);
-  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+  border: 1px solid #ffffff;
 }
 
 button.swiper-pagination-bullet {
@@ -805,6 +804,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  border: none;
 }
 
 .swiper-vertical > .swiper-pagination-bullets,
@@ -1232,53 +1232,53 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/* montserrat-300 - latin */
+/* montserrat-300 - cyrillic_latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/montserrat-v26-latin-300.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic_latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* montserrat-regular - latin */
+/* montserrat-regular - cyrillic_latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v26-latin-regular.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* montserrat-500 - latin */
+/* montserrat-500 - cyrillic_latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserrat-v26-latin-500.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic_latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* montserrat-600 - latin */
+/* montserrat-600 - cyrillic_latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat-v26-latin-600.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* montserrat-700 - latin */
+/* montserrat-700 - cyrillic_latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* montserrat-800 - latin */
+/* montserrat-800 - cyrillic_latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/montserrat-v26-latin-800.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic_latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 *,
 *::before,
@@ -1299,7 +1299,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Monsterrat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: #2D383F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1499,7 +1499,9 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 20px;
+  font-weight: 500;
+  line-height: 16px;
   color: #ffffff;
   background-color: #0266C1;
   border: none;
@@ -2164,14 +2166,20 @@ button,
       -ms-flex-align: center;
           align-items: center;
   background-color: #0266C1;
-  max-width: 1200px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 32px 20px;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 1200px;
 }
 
 .main-header__phone {
   color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
 }
 
 .header-nav__list {
@@ -2191,14 +2199,65 @@ button,
 }
 
 .hero__slide {
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding: 200px 120px 80px;
+  color: #ffffff;
+}
+
+.hero__title {
+  max-width: 934px;
 }
 
 .hero__description {
+  font-size: 17px;
+  line-height: 24px;
+  max-width: 457px;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 35px;
+}
+
+.hero__button {
+  margin-bottom: 134px;
+}
+
+.hero__box img {
+  position: absolute;
+  z-index: -2;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero__info-box {
+  position: relative;
+}
+
+.hero__item {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 14px 20px 14px 40px;
+  border: 1px solid #ffffff;
+}
+
+.hero__icon {
+  position: absolute;
+  left: 20px;
+  top: 7px;
 }
 
 /* @mixin hover-focus {
