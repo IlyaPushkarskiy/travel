@@ -2171,6 +2171,8 @@ button,
   padding: 32px 20px;
   position: absolute;
   top: 0;
+  left: auto;
+  right: auto;
   z-index: 5;
   width: 1200px;
 }
@@ -2258,6 +2260,41 @@ button,
   position: absolute;
   left: 20px;
   top: 7px;
+}
+
+.video {
+  position: absolute;
+  right: 120px;
+  top: 329px;
+  z-index: -2;
+  width: 482px;
+  height: 317px;
+}
+
+.video__button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 17px 19px 17px 25px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video--enabled .video__media {
+  z-index: 13;
 }
 
 /* @mixin hover-focus {

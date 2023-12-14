@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initHeroSlider} from './modules/hero-slider';
+import {findVideos} from './modules/video';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initHeroSlider();
+    findVideos();
   });
 });
 
